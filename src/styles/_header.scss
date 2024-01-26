@@ -1,5 +1,8 @@
 #particles-js {
-  background: $main;
+  background-image: url("/assets/img/stars.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   display: flex;
   vertical-align: bottom;
   width: 100%;
@@ -47,7 +50,7 @@
 
 .header-links {
   margin: 10px;
-  .link {
+  .link, .pdf {
     color: #FFF;
     text-decoration: none;
     font-size: 15px;
@@ -63,6 +66,7 @@
   justify-content: center;
   text-align: center;
   .icon {
+    box-sizing: content-box;
     text-align: center;
     color: #FFF;
     width: 20px;

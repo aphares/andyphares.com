@@ -99,3 +99,118 @@
                 border-color 0.3s ease-in;
   }
 }
+
+.project-starmos {
+  background: url("/assets/img/starmos.png") round no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-ipmp {
+  background: url("/assets/img/ipmp.png") round no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-labassist {
+  background: url("/assets/img/labassist.jpg") round no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-rogue {
+  background: url("/assets/img/rogue.jpg") round no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-arbnb {
+  background: url("/assets/img/arbnb.gif") round no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-legv8 {
+  background: url("/assets/img/legv8.jpg") round no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-content {
+  margin: 45px 100px;
+  padding: 0px 50px 25px 50px;
+  color: #fff;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:25px;
+  background: #fff; /* fallback for browsers that don't understand rgba */
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.project-tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (min-width: $cut) {
+    flex-wrap: nowrap;
+    font-size: 32px;
+  }
+}
+
+.project-tech > a {
+  margin: 10px;
+}
+
+.tech {
+  margin: 10px;
+}
+
+.user {
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  p {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: $cut) {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
+}
+
+.user-details {
+  text-align: left;
+  margin: 5px auto;
+}

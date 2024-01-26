@@ -1,29 +1,377 @@
 <div class="user-details">
-  <h1> Featured Projects </h1>
+  <h1
+    class="mb-4 text-3xl text-gray-900 dark:text-white md:text-5xl lg:text-5xl"
+  >
+    Projects
+  </h1>
 </div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+<div id="default-carousel" class="relative w-full" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+    <!-- Item 1 -->
+    <div
+      class="project-starmos hidden duration-700 ease-in-out"
+      data-carousel-item
+    >
+      <div class="project-content">
+        <h2 class="text-4xl font-bold dark:text-white" style="color: #fff">
+          <a href="https://starmos.io">starmos.io</a>
+        </h2>
+        <p>
+          Inspired by flat design,
+          <a href="https://starmos.io">starmos.io</a> is an online web game
+          created using node.js. The objective of the game is to explore the map
+          from a selection of spaceships, and find asteroids, comets, or enemy
+          players in order to unlock new abilities. All graphics were designed
+          using simple shapes and colors, some of which are generated during
+          gameplay.
+        </p>
+        <div class="project-tech">
+          <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+            ><i title="html5" class="devicon-html5-plain-wordmark"></i
+          ></a>
+          <a href="https://vuejs.org/"
+            ><i title="Vue.js" class="devicon-vuejs-plain-wordmark"></i
+          ></a>
+          <a href="https://socket.io/"
+            ><i title="socket.io" class="devicon-socketio-original"></i
+          ></a>
+          <a href="https://expressjs.com/"
+            ><i title="Express.js" class="devicon-express-original"></i
+          ></a>
+          <a href="https://webpack.js.org/"
+            ><i title="Webpack" class="devicon-webpack-plain"></i
+          ></a>
+          <a href="https://kubernetes.io/"
+            ><i title="kubernetes" class="devicon-kubernetes-plain"></i
+          ></a>
+          <a href="https://www.docker.com/"
+            ><i title="docker" class="devicon-docker-plain"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- Item 2 -->
+    <div
+      class="project-ipmp hidden duration-700 ease-in-out"
+      data-carousel-item
+    >
+      <div class="project-content">
+        <h2 class="text-4xl font-bold dark:text-white" style="color: #fff">
+          <a href="https://ipmp.ctre.iastate.edu/gisdata/"
+            >IPMP Data Exploration Interface</a
+          >
+        </h2>
+        <p>
+          This
+          <a href="https://ipmp.ctre.iastate.edu/gisdata/"
+            >app</a
+          >
+          is built with the
+          <a href="https://developers.arcgis.com/javascript/latest/"
+            >ArcGIS API</a
+          >
+          and
+          <a href="https://developers.arcgis.com/web-appbuilder/"
+            >Web AppBuilder Source</a
+          >. The interface presents metadata in the form of map layers, chart infographics, and other derived overlays for use by local government agencies in Iowa. The app includes various tools to estimate
+          costs for road treatments, and to save a selection of data as a geodatabase or shapefile through
+          the download geoprocessing service.
+        </p>
+        <div class="project-tech">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            ><i title="JavaScript" class="devicon-javascript-plain"></i
+          ></a>
+          <a href="https://nodejs.org/en"
+            ><i title="Node.js" class="devicon-nodejs-plain-wordmark"></i
+          ></a>
+          <a href="https://www.python.org/"
+            ><i title="Python" class="devicon-python-plain"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- Item 3 -->
+    <div
+      class="project-labassist hidden duration-700 ease-in-out"
+      data-carousel-item
+    >
+      <div class="project-content">
+        <h2 class="text-4xl font-bold dark:text-white" style="color: #fff">
+          <a href="https://gitlab.com/aphares/lab-assistant">Lab Assistant</a>
+        </h2>
+        <p>
+          <a href="https://gitlab.com/aphares/lab-assistant">Lab Assistant</a>
+          is a companion app for teachers to use in the classroom. Designed for
+          Android, users can track attendance, assign homework, organize
+          students into groups, and manage other details of their classroom or
+          lab. Students can use the app to chat with other users about class
+          material, and notify the instructor for help. Data is served to the
+          app from a MySQL backend, accessible via a REST API.
+        </p>
+        <div class="project-tech">
+          <a href="https://developer.android.com/studio"
+            ><i title="Android" class="devicon-android-plain"></i
+          ></a>
+          <a href="https://spring.io/projects/spring-boot"
+            ><i title="Springboot" class="devicon-spring-plain"></i
+          ></a>
+          <a href="https://www.mysql.com/"
+            ><i title="MySQL" class="devicon-mysql-plain"></i
+          ></a>
+          <a href="https://gradle.org/"
+            ><i title="Gradle" class="devicon-gradle-plain"></i
+          ></a>
+          <a href="https://www.docker.com/"
+            ><i title="docker" class="devicon-docker-plain"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- Item 4 -->
+    <div
+      class="project-rogue hidden duration-700 ease-in-out"
+      data-carousel-item
+    >
+      <div class="project-content">
+        <h2 class="text-4xl font-bold dark:text-white" style="color: #fff">
+          <a href="https://gitlab.com/aphares/roguelike-game">Roguelike Game</a>
+        </h2>
+        <p>
+          A roguelike game written in C & C++ that runs inside the terminal,
+          with graphics managed by
+          <a href="https://invisible-island.net/ncurses/announce.html">
+            ncurses </a
+          >. Maps are randomly generated: hallways are marked with '#', rooms as
+          '.', enemies as alpha characters, and items as special characters. The
+          player is controlled via keyboard input, and must navigate through the
+          dungeon to find enemy characters and collect items. The game ends once
+          either the player or all enemies are defeated.
+        </p>
+        <div class="project-tech">
+          <a href="https://www.gnu.org/software/gnu-c-manual/"
+            ><i title="C" class="devicon-c-plain"></i
+          ></a>
+          <a href="https://cplusplus.com/"
+            ><i title="C++" class="devicon-cplusplus-plain"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- Item 5 -->
+    <div
+      class="project-arbnb hidden duration-700 ease-in-out"
+      data-carousel-item
+    >
+      <div class="project-content">
+        <h2 class="text-4xl font-bold dark:text-white" style="color: #fff">
+          <a href="https://seniord.cs.iastate.edu/2020-Dec-SD3/">ARBnb</a>
+        </h2>
+        <p>
+          <a href="https://seniord.cs.iastate.edu/2020-Dec-SD3/">ARBnb</a> is an
+          augmented reality application developed for Android, and developed for
+          <a href="https://leantechniques.com/">LEAN Techniques</a> as part of
+          my senior project. Using Google's ARCore library in Unity, the app
+          presents an interface for 3d spaces: interactive tooltips and icons
+          are augmented into the room via the mobile camera, displaying property
+          information to the user, such as public hiking trails or room info.
+        </p>
+        <div class="project-tech">
+          <a href="https://docs.microsoft.com/en-us/dotnet/csharp/"
+            ><i title="C#" class="devicon-csharp-plain"></i
+          ></a>
+          <a href="https://unity.com/"
+            ><i title="Unity" class="devicon-unity-original"></i
+          ></a>
+          <a href="https://cloud.google.com/"
+            ><i title="Google Cloud" class="devicon-googlecloud-plain"></i
+          ></a>
+          <a href="https://developer.android.com/studio"
+            ><i title="Android" class="devicon-android-plain"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- Item 6 -->
+    <div
+      class="project-legv8 hidden duration-700 ease-in-out"
+      data-carousel-item
+    >
+      <div class="project-content">
+        <h2 class="text-4xl font-bold dark:text-white" style="color: #fff">
+          <a href="https://gitlab.com/aphares/legv8-isa-emulator"
+            >LEGv8 Emulator</a
+          >
+        </h2>
+        <p>
+          A subset of ARMv8's Instruction Set Architecture,
+          <a href="http://harmanani.github.io/classes/csc320/Notes/ch02.pdf"
+            >LEGv8</a
+          >
+          is a reduced form of assembly with standard commands such as 'ADD',
+          'LSL', and 'LDUR'. Assembly is passed into this LEGv8 Emulator, which
+          parses and executes each statement. Memory is explicity allocated into
+          static arrays for registers (X9, X10, X11...) and variables (e.g. X0
+          after executing the above 'LDUR' statement). The emulator is written
+          completely in C, and was created as a class project for COM S 321:
+          Introduction to Computer Architecture and Machine-Level Programming.
+        </p>
+        <div class="project-tech">
+          <a href="https://www.gnu.org/software/gnu-c-manual/"
+            ><i title="C" class="devicon-devicon-c-plain"></i
+          ></a>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="contents">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+  <!-- Slider indicators -->
+  <div
+    class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+  >
+    <button
+      type="button"
+      class="w-3 h-3 rounded-full"
+      aria-current="true"
+      aria-label="Slide 1"
+      data-carousel-slide-to="0"
+    ></button>
+    <button
+      type="button"
+      class="w-3 h-3 rounded-full"
+      aria-current="false"
+      aria-label="Slide 2"
+      data-carousel-slide-to="1"
+    ></button>
+    <button
+      type="button"
+      class="w-3 h-3 rounded-full"
+      aria-current="false"
+      aria-label="Slide 3"
+      data-carousel-slide-to="2"
+    ></button>
+    <button
+      type="button"
+      class="w-3 h-3 rounded-full"
+      aria-current="false"
+      aria-label="Slide 4"
+      data-carousel-slide-to="3"
+    ></button>
+    <button
+      type="button"
+      class="w-3 h-3 rounded-full"
+      aria-current="false"
+      aria-label="Slide 5"
+      data-carousel-slide-to="4"
+    ></button>
+    <button
+      type="button"
+      class="w-3 h-3 rounded-full"
+      aria-current="false"
+      aria-label="Slide 6"
+      data-carousel-slide-to="5"
+    ></button>
   </div>
+  <!-- Slider controls -->
+  <button
+    type="button"
+    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+    data-carousel-prev
+  >
+    <span
+      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+    >
+      <svg
+        class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 6 10"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 1 1 5l4 4"
+        />
+      </svg>
+      <span class="sr-only">Previous</span>
+    </span>
+  </button>
+  <button
+    type="button"
+    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+    data-carousel-next
+  >
+    <span
+      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+    >
+      <svg
+        class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 6 10"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m1 9 4-4-4-4"
+        />
+      </svg>
+      <span class="sr-only">Next</span>
+    </span>
+  </button>
 </div>
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+<div class="user">
+  <div class="tech">
+    <h2 class="text-4xl font-bold dark:text-white">Code</h2>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      ><i title="JavaScript" class="devicon-javascript-plain colored"></i
+    ></a>
+    <a href="https://react.dev/"
+      ><i title="React" class="devicon-react-original-wordmark colored"></i
+    ></a>
+    <a href="https://nodejs.org/en"
+      ><i title="Node.js" class="devicon-nodejs-plain-wordmark"></i
+    ></a>
+    <p>
+      JavaScript, React, Node.js, Vue, Java, C#, C++, C, HTML, Python, php, SQL,
+      Racket
+    </p>
   </div>
-  <div class="contents-right">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+  <div class="tech">
+    <h2 class="text-4xl font-bold dark:text-white">Tools</h2>
+    <a href="https://git-scm.com/"
+      ><i title="git" class="devicon-git-plain"></i
+    ></a>
+    <a href="https://kubernetes.io/"
+      ><i title="Kuberenetes" class="devicon-kubernetes-plain colored"></i
+    ></a>
+    <a href="https://www.docker.com/"
+      ><i title="Docker" class="devicon-docker-plain colored"></i
+    ></a>
+    <p>
+      Git, Kubernetes, Docker, Drone CI, Webpack, Amazon AWS, Google Cloud
+      Platform, Unreal Engine 5
+    </p>
+  </div>
+  <div class="tech">
+    <h2 class="text-4xl font-bold dark:text-white">Design</h2>
+    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+      ><i title="HTML5" class="devicon-html5-plain-wordmark"></i
+    ></a>
+    <a href="https://www.selenium.dev/"
+      ><i title="Selenium" class="devicon-selenium-original colored"></i
+    ></a>
+    <a href="https://sass-lang.com/"
+      ><i title="Sass" class="devicon-sass-original colored"></i
+    ></a>
+    <p>
+      HTML5, Selenium, Sass, Canvas, Figma, Confluence, MUI, Substance Painter,
+      PixiJS
+    </p>
   </div>
 </div>
